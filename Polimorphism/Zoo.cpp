@@ -7,14 +7,11 @@ void Zoo::add( Animal* a)
 
 void Zoo::showMenu()
 {
-	string tempType;
-	cout << "Enter for your animal:\t";
-	cin >> tempType;
-	if (tempType == "Cat" || tempType == "cat")
-	{
-		
-	}
 
+	cout << "Enter age for your pet:\t";
+	cin >> age;
+	cout << "Enter weight for your pet:\t";
+	cin >> weight;
 }
 
 void Zoo::print() const
@@ -26,7 +23,8 @@ void Zoo::print() const
 	}
 }
 
-void Zoo::edit()
+void Zoo::edit(const size_t& num, const int& age, const int& weight)
 {
-	
+	zoo[num]->setAge(age);
+	zoo[num]->setWeight(weight);
 }

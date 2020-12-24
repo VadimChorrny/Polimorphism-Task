@@ -10,7 +10,7 @@ public:
 	void add( Animal* a); // 1.Dog 2.Cat
 	void showMenu();
 	void print() const;
-	void edit(); // edit age,weight 
+	void edit(const size_t& num, const int& age, const int& weight); // edit age,weight 
 private:
 	vector<Animal*> zoo;
 };
